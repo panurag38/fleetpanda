@@ -1,0 +1,154 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.9rem 1.5rem;
+  background: linear-gradient(90deg, #1d4ed8 0%, #2563eb 100%);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.22);
+}
+
+.app-header__brand .app-header__title {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.app-tagline {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.workspace-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.workspace-toggle__option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1;
+  transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.workspace-toggle__option:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.workspace-toggle__option--active {
+  background: #fff;
+  color: #1d4ed8;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.16);
+}
+
+.workspace-toggle__option--active:hover {
+  background: #fff;
+  color: #1d4ed8;
+}
+
+.auth-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.user-greeting {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.auth-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 2.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+  font: inherit;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.auth-button__icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.auth-button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.auth-button--login {
+  background: #fff;
+  color: #1d4ed8;
+  border-color: #fff;
+  font-weight: 600;
+}
+
+.auth-button--login:hover {
+  background: #eff6ff;
+}
+
+@media (max-width: 720px) {
+  .header-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .workspace-toggle {
+    order: 2;
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .workspace-toggle__option {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .auth-actions {
+    margin-left: auto;
+  }
+}

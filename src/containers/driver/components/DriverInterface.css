@@ -1,0 +1,60 @@
+.driver-shell {
+  padding: var(--space-1);
+}
+
+.driver-shell__title {
+  margin: 0 0 var(--space-05);
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.driver-shell .sub-nav {
+  margin-bottom: var(--space-1);
+}
+
+.driver-summary,
+.driver-panel {
+  margin-top: var(--space-1);
+}
+
+.driver-summary p {
+  margin: 0;
+}
+
+.delivery-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.order-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-05);
+  padding: var(--space-1);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+.order-card__main {
+  font-size: 0.98rem;
+}
+
+.order-card__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+}
+
+.button-group {
+  display: flex;
+  gap: var(--space-05);
+}
+
+.muted {
+  color: var(--text-secondary);
+}

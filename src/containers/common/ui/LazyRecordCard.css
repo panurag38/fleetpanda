@@ -1,0 +1,126 @@
+.lazy-record-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 140px;
+  text-align: left;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font: inherit;
+}
+
+.lazy-record-card__top {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  width: 100%;
+}
+
+.lazy-record-card__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.lazy-record-card--interactive {
+  cursor: pointer;
+  transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.lazy-record-card--interactive:hover {
+  transform: translateY(-2px);
+  border-color: var(--calendar-day-active-border);
+  box-shadow: var(--shadow-card);
+}
+
+.lazy-record-card--empty {
+  opacity: 0.85;
+  cursor: not-allowed;
+}
+
+.lazy-record-card--expanded {
+  min-height: auto;
+  width: 100%;
+}
+
+.lazy-record-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.85rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.lazy-record-card__icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.lazy-record-card__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.lazy-record-card__header h5,
+.lazy-record-card__title-group h5 {
+  margin: 0;
+}
+
+.lazy-record-card__count {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.lazy-record-card__hint,
+.lazy-record-card__subtitle {
+  margin: 0.35rem 0 0;
+}
+
+.lazy-record-card__toolbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.lazy-record-card__title-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.lazy-record-card__actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.lazy-record-card__status {
+  margin: 0;
+}
+
+.lazy-record-card__body {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.lazy-record-card__body--loading {
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .lazy-record-card__actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

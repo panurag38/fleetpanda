@@ -1,0 +1,122 @@
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  min-height: 100%;
+  padding: 2rem 1.5rem;
+  background: #f5f7fb;
+  color-scheme: light;
+  --bg-muted: #f8fafc;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --text-label: #334155;
+  --border-input: #cbd5e1;
+  --accent: #2563eb;
+  --focus-ring: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.login-page .icon-field__control {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.login-page .icon-field__input {
+  color: #0f172a;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  min-height: unset;
+  padding: 0.85rem 0;
+  box-shadow: none;
+}
+
+.login-page .icon-field__input:focus {
+  border: 0;
+  box-shadow: none;
+}
+
+.login-page .icon-field__input::placeholder {
+  color: #64748b;
+}
+
+.login-page .icon-field__label {
+  color: #334155;
+}
+
+.login-page .icon-field__icon {
+  color: #64748b;
+}
+
+.login-card {
+  width: min(440px, 100%);
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.08);
+}
+
+.login-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.login-card__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.85rem;
+  background: #dbeafe;
+  color: #2563eb;
+  flex-shrink: 0;
+}
+
+.login-card__badge svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.login-card h2 {
+  margin: 0 0 0.35rem;
+  color: #0f172a;
+  font-size: 1.5rem;
+}
+
+.login-note {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.login-form {
+  margin: 0;
+}
+
+.login-actions {
+  margin-top: 0.5rem;
+}
+
+.login-submit {
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.login-submit__icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.login-error {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  border-radius: 0.75rem;
+}

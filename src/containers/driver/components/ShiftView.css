@@ -1,0 +1,17 @@
+.shift-view {
+  display: grid;
+  gap: 1rem;
+}
+
+.shift-view__today {
+  margin-bottom: 0;
+}
+
+.shift-view__today-actions {
+  margin-top: 0.75rem;
+}
+
+.shift-view__loading {
+  padding: 1rem 1.25rem;
+  margin: 0;
+}

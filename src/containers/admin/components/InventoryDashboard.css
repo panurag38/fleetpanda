@@ -1,0 +1,17 @@
+.inventory-dashboard {
+  display: grid;
+  gap: 1rem;
+}
+
+.inventory-dashboard__search {
+  max-width: 420px;
+}
+
+.inventory-dashboard__search .form-field {
+  margin-bottom: 0;
+}
+
+.inventory-dashboard__loading {
+  padding: 1rem 1.25rem;
+  margin: 0;
+}

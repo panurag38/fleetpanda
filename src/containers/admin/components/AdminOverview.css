@@ -1,0 +1,32 @@
+.admin-overview {
+  display: grid;
+  gap: 1rem;
+}
+
+.admin-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-1);
+}
+
+.admin-overview__details-header {
+  align-items: flex-start;
+}
+
+.admin-overview__details-subtitle {
+  margin: 0.35rem 0 0;
+}
+
+.admin-overview__details-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+@media (max-width: 640px) {
+  .admin-overview__details-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

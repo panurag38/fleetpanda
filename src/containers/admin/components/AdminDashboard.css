@@ -1,0 +1,13 @@
+.admin-shell {
+  padding: var(--space-1);
+}
+
+.admin-shell__title {
+  margin: 0 0 var(--space-05);
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.admin-shell .sub-nav {
+  margin-bottom: var(--space-1);
+}

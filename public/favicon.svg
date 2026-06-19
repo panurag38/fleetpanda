@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="FleetPanda">
+  <rect width="32" height="32" rx="8" fill="#2563eb"/>
+  <path d="M8 20h3.2l1.2-4h7.2l1.2 4H24l-4.2-12H12.2L8 20zm8.2-8.4L17 16h-2l.8-4.4z" fill="#fff"/>
+  <circle cx="11" cy="22" r="2" fill="#dbeafe"/>
+  <circle cx="21" cy="22" r="2" fill="#dbeafe"/>
+</svg>

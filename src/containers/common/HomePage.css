@@ -1,0 +1,117 @@
+.homepage {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.homepage-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.homepage-hero__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.homepage-hero__icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.homepage-eyebrow {
+  margin: 0 0 0.35rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.homepage-hero h2,
+.homepage-empty h3,
+.homepage-stats h3 {
+  margin: 0 0 0.5rem;
+}
+
+.homepage-lead {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.homepage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.homepage-tile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: 18px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-card);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
+}
+
+.homepage-tile:hover {
+  transform: translateY(-2px);
+  border-color: var(--calendar-day-active-border);
+  box-shadow: var(--shadow-card);
+}
+
+.homepage-tile__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.85rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.homepage-tile__icon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.homepage-tile h3 {
+  margin: 0 0 0.35rem;
+  color: var(--text-primary);
+}
+
+.homepage-tile p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.homepage-empty {
+  text-align: center;
+}
+
+.homepage-tips {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.homepage-tips li + li {
+  margin-top: 0.35rem;
+}

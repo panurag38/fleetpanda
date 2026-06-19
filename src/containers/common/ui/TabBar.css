@@ -1,0 +1,22 @@
+.tab-bar {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tab-bar__tab {
+  border: 1px solid var(--border-input);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+.tab-bar__tab--active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}

@@ -1,0 +1,28 @@
+.delivery-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.delivery-panel__header {
+  align-items: flex-end;
+}
+
+.delivery-panel__header .form-field {
+  margin-bottom: 0;
+  width: min(100%, 480px);
+}
+
+.delivery-panel__action-error {
+  margin: 0;
+}
+
+.delivery-panel__loading {
+  padding: 1rem 1.25rem;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .delivery-panel__header .form-field {
+    width: 100%;
+  }
+}

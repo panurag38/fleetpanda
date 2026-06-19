@@ -1,0 +1,51 @@
+.master-data {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.master-data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.master-data-form {
+  scroll-margin-top: 1rem;
+}
+
+.master-data-form h4 {
+  margin-top: 0;
+}
+
+.master-data-form .form-field:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.master-data-records-section {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.master-data-records-section h4 {
+  margin: 0;
+}
+
+.master-data-records {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.master-data-records .lazy-record-card--expanded {
+  overflow: hidden;
+}
+
+.master-data-records .lazy-record-card--expanded .data-table__wrapper {
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .master-data-grid {
+    grid-template-columns: 1fr;
+  }
+}
